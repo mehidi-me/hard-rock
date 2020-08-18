@@ -38,7 +38,7 @@ const createElement = (title, albumName, getartist, gettitle) => {
     div2.appendChild(button);
     button.classList.add("btn", "btn-success");
     button.appendChild(a)
-    a.href = `/index.html?artist=${getartist}&title=${gettitle}`;
+    a.href = `${window.location.origin}${window.location.pathname}?artist=${getartist}&title=${gettitle}`;
     a.innerText = "Get Lyrics";
 
 
